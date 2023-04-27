@@ -13,22 +13,23 @@
             <gauage:SfCircularGauge.Scales>
             <gauage:Scale StartValue="0" EndValue="100" RimColor="#B0B0B0" LabelColor="#000000" FontAttributes="Bold" LabelFontSize="14">
                     <gauage:Scale.Ranges>
-                  <gauage:Range StartValue="0" EndValue="35" Color="Green" Offset="0.85" Thickness="12"/>
-                  <gauage:Range StartValue="35" EndValue="70" Color="orange"  Offset="0.85" Thickness="12"/>
-                  <gauage:Range StartValue="70" EndValue="100" Color="Red"  Offset="0.85" Thickness="12"/>
+                        <gauage:Range StartValue="0" EndValue="35" Color="Green" Offset="0.85" Thickness="12"/>
+                        <gauage:Range StartValue="35" EndValue="70" Color="orange"  Offset="0.85" Thickness="12"/>
+                        <gauage:Range StartValue="70" EndValue="100" Color="Red"  Offset="0.85" Thickness="12"/>
                     </gauage:Scale.Ranges>
                     <gauage:Scale.Pointers>
-                  <gauage:NeedlePointer Value="{Binding PointerValue}" Type="Triangle" KnobStrokeWidth="0" KnobRadius="15" TailLengthFactor=".2" KnobColor="#827D7D" />
+                        <gauage:NeedlePointer Value="{Binding PointerValue}" Type="Triangle" KnobStrokeWidth="0" KnobRadius="15" TailLengthFactor=".2" KnobColor="#827D7D" />
                     </gauage:Scale.Pointers>
-                </gauage:Scale>
+             </gauage:Scale>
             </gauage:SfCircularGauge.Scales>
             <gauage:SfCircularGauge.Headers>
                 <gauage:Header Text="Load %" ForegroundColor="Black" TextSize="20" />
             </gauage:SfCircularGauge.Headers>
         </gauage:SfCircularGauge>
 
-        
-         <chart:SfChart x:Name="ColumnChart" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300" WidthRequest="300" Margin="0,20,0,0">
+        <Label Text="{Binding LoadData}" HorizontalOptions="Center" FontSize="30" />
+
+        <chart:SfChart x:Name="ColumnChart" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300" WidthRequest="300" Margin="0,20,0,0">
             <chart:SfChart.Title >
                 <chart:ChartTitle Text="Predection of load for next 4 hours" Margin="0,100,0,200"/>
             </chart:SfChart.Title>

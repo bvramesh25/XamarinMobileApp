@@ -11,6 +11,7 @@ namespace VoltPlusPlus.ViewModels
    public class SubstationViewModel : BaseViewModel
    {
       double _pointerVal = Global.SubstationLoad;
+      public string LoadData { get; set; }
       public List<SubstationLoadData> SubStationLoad { get; set; }
       public double PointerValue
       {
@@ -25,6 +26,7 @@ namespace VoltPlusPlus.ViewModels
       {
          Title = "Substation Load";
          _pointerVal = Global.SubstationLoad;
+            LoadData = "LoadValue = " + Global.SubstationLoad.ToString() + "%";
          SubStationLoad = new List<SubstationLoadData>
          {
             new SubstationLoadData { Hours = 1, Load = 80 },
