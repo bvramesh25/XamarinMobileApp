@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoltPlusPlus.Views.MyGadgetsPage"
+             xmlns:local="clr-namespace:VoltPlusPlus.ViewModels"
+             xmlns:control="clr-namespace:VoltPlusPlus.Views"
+             Title="{Binding Title}">
+
+   <ContentPage.ToolbarItems>
+      <ToolbarItem Text="Add" Command="{Binding AddGadgetCommand}" />
+   </ContentPage.ToolbarItems>
+   <ContentPage.Content>
+
+      <Grid x:Name="GridLayout" ColumnSpacing="10" >
+         <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+         </Grid.RowDefinitions>
+
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+         </Grid.ColumnDefinitions>
+         <Grid.GestureRecognizers>
+            <TapGestureRecognizer 
+               NumberOfTapsRequired="1"
+               Command="{Binding GadgetTapped}">
+            </TapGestureRecognizer>
+         </Grid.GestureRecognizers>
+
+         <Button  Text="Stop" Grid.Row="1" Grid.Column="0" Command="{Binding StopCommand}" IsEnabled="{Binding GadgetSelected}"/>
+         <Button Text="Start" Grid.Row="1" Grid.Column="1" Command="{Binding StartCommand}" IsEnabled="{Binding GadgetSelected}" />
+
+         <Image Source="AirConditioner.png" Grid.Row="3" Grid.Column="0" BackgroundColor="White"/>
+         <Label Text="Master Bedroom AC" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center"/>
+
+         <Image Source="ElectricCar.png" Grid.Row="3" Grid.Column="1" BackgroundColor="White"/>
+         <Label Text="Electri Car" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+         <Image Source="WashingMachine.png" Grid.Row="5" Grid.Column="0" BackgroundColor="White"/>
+         <Label Text="Washing Machine" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center"/>
+
+         <Image Source="Heater.png" Grid.Row="5" Grid.Column="1" BackgroundColor="White"/>
+         <Label Text="Master Bedroom Heater" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+         <Image x:Name="BulbImage" Source="Bulb.png" Grid.Row="7" Grid.Column="0" IsVisible="{Binding AddedBulb}" BackgroundColor="{Binding BulbSelected}"/>
+         <Label x:Name="BulbText" Text="Master Bedroom Light" Grid.Row="8" Grid.Column="0" HorizontalTextAlignment="Center" IsVisible="{Binding AddedBulb}"/>
+      </Grid>
+   </ContentPage.Content>
+</ContentPage>

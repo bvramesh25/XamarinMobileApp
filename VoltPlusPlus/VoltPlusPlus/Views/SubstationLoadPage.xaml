@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gauage="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="VoltPlusPlus.Views.SubstationLoadPage"
+             xmlns:local="clr-namespace:VoltPlusPlus.ViewModels" 
+             xmlns:viewmodels="clr-namespace:VoltPlusPlus.ViewModels" x:DataType="viewmodels:SubstationViewModel"
+             Title="{Binding Title}">
+
+    <StackLayout >
+        <gauage:SfCircularGauge Margin="10">
+            <gauage:SfCircularGauge.Scales>
+            <gauage:Scale StartValue="0" EndValue="100" RimColor="#B0B0B0" LabelColor="#000000" FontAttributes="Bold" LabelFontSize="14">
+                    <gauage:Scale.Ranges>
+                  <gauage:Range StartValue="0" EndValue="35" Color="Green" Offset="0.85" Thickness="12"/>
+                  <gauage:Range StartValue="35" EndValue="70" Color="orange"  Offset="0.85" Thickness="12"/>
+                  <gauage:Range StartValue="70" EndValue="100" Color="Red"  Offset="0.85" Thickness="12"/>
+                    </gauage:Scale.Ranges>
+                    <gauage:Scale.Pointers>
+                  <gauage:NeedlePointer Value="{Binding PointerValue}" Type="Triangle" KnobStrokeWidth="0" KnobRadius="15" TailLengthFactor=".2" KnobColor="#827D7D" />
+                    </gauage:Scale.Pointers>
+                </gauage:Scale>
+            </gauage:SfCircularGauge.Scales>
+            <gauage:SfCircularGauge.Headers>
+                <gauage:Header Text="Load %" ForegroundColor="Black" TextSize="20" />
+            </gauage:SfCircularGauge.Headers>
+        </gauage:SfCircularGauge>
+
+        
+         <chart:SfChart x:Name="ColumnChart" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300" WidthRequest="300" Margin="0,20,0,0">
+            <chart:SfChart.Title >
+                <chart:ChartTitle Text="Predection of load for next 4 hours" Margin="0,100,0,200"/>
+            </chart:SfChart.Title>
+
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis>
+                    <chart:CategoryAxis.Title>
+                        <chart:ChartAxisTitle Text="Hours" />
+                    </chart:CategoryAxis.Title>
+                </chart:CategoryAxis>
+            </chart:SfChart.PrimaryAxis>
+
+            <chart:SfChart.SecondaryAxis>
+                <chart:NumericalAxis Minimum="10" Maximum="100">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Load %" />
+                    </chart:NumericalAxis.Title>
+                </chart:NumericalAxis>
+            </chart:SfChart.SecondaryAxis>
+
+            <chart:ColumnSeries ItemsSource="{Binding SubStationLoad}"
+                                 XBindingPath="Hours"
+                                 YBindingPath="Load"/>
+        </chart:SfChart>
+
+    </StackLayout>
+
+</ContentPage>

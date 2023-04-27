@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4B4sGNBXt5lcNdXxLYsPzBAdWYKIc3NFRn7d1xf7HF6dD2CIotpc0BHDGS0b1hPRyQV4wYeNV8FIfb3uDDdOaw==",
+  "success": true,
+  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\inthehand.net.bluetooth\\4.0.34.1\\inthehand.net.bluetooth.4.0.34.1.nupkg.sha512",
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\syncfusion.xamarin.sfchart\\15.4.0.20\\syncfusion.xamarin.sfchart.15.4.0.20.nupkg.sha512",
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\syncfusion.xamarin.sfgauge\\15.4.0.20\\syncfusion.xamarin.sfgauge.15.4.0.20.nupkg.sha512",
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\rvbhamid\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
