@@ -10,6 +10,8 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using VoltPlusPlus.Views;
+using System.Net.Http;
+using VoltPlusPlus.Services;
 
 namespace VoltPlusPlus.ViewModels
 {
@@ -25,6 +27,8 @@ namespace VoltPlusPlus.ViewModels
       public Command StartCommand { get; }
       public Command StopCommand { get; }
       public Command<Gadget> GadgetTapped { get; }
+
+      public RestService restService;
 
       public bool AddedBulb 
       { 
@@ -69,6 +73,7 @@ namespace VoltPlusPlus.ViewModels
          StartCommand = new Command(OnStartGadget);
          StopCommand = new Command(OnStopGadget);
          SetProperty(ref _gadgetSelected, _gadgetSelected && _addedBulb);
+         restService = new RestService();
       }
 
       async Task ExecuteLoadGadgetsCommand()
@@ -115,14 +120,34 @@ namespace VoltPlusPlus.ViewModels
       private async void OnStartGadget(object obj)
       {
          Global.BulbOn = true;
-         Global.SubstationLoad = 85.0;
+         int load;
+         try
+         {
+             await restService.SetLoadAsync(85);
+             load = await restService.GetLoadAsync();
+         }
+         catch
+         {
+             load = 85;
+         }
+         Global.SubstationLoad = load;
          await Task.FromResult(true);
       }
 
       private async void OnStopGadget(object obj)
       {
          Global.BulbOn = false;
-         Global.SubstationLoad = 80.0;
+         int load;
+         try
+         {
+             await restService.SetLoadAsync(80);
+             load = await restService.GetLoadAsync();
+         }
+         catch
+         {
+             load = 80;
+         }
+         Global.SubstationLoad = load;
          await Task.FromResult(true);
       }
 
