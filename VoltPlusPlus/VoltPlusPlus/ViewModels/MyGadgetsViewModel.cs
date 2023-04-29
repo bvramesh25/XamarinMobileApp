@@ -125,9 +125,11 @@ namespace VoltPlusPlus.ViewModels
          {
              await restService.SetLoadAsync(85);
              load = await restService.GetLoadAsync();
+               await restService.ToggleBulb(true);
          }
          catch
          {
+                
              load = 85;
          }
          Global.SubstationLoad = load;
@@ -142,7 +144,8 @@ namespace VoltPlusPlus.ViewModels
          {
              await restService.SetLoadAsync(80);
              load = await restService.GetLoadAsync();
-         }
+                await restService.ToggleBulb(false);
+            }
          catch
          {
              load = 80;
