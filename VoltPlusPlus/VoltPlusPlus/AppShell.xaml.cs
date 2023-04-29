@@ -15,6 +15,8 @@ namespace VoltPlusPlus
          Routing.RegisterRoute(nameof(MyGadgetsPage), typeof(MyGadgetsPage));
          Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
          Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+         Routing.RegisterRoute(nameof(UserIncentivePage), typeof(UserIncentivePage));
+         Routing.RegisterRoute(nameof(SchedulePage), typeof(SchedulePage));
       }
 
    }

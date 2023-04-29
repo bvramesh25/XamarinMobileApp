@@ -26,6 +26,7 @@ namespace VoltPlusPlus.ViewModels
       public Command AddGadgetCommand { get; }
       public Command StartCommand { get; }
       public Command StopCommand { get; }
+      public Command SchedueleCommand { get; }
       public Command<Gadget> GadgetTapped { get; }
 
       public RestService restService;
@@ -72,6 +73,7 @@ namespace VoltPlusPlus.ViewModels
          AddGadgetCommand = new Command(OnAddGadget);
          StartCommand = new Command(OnStartGadget);
          StopCommand = new Command(OnStopGadget);
+         SchedueleCommand = new Command(OnScheduleGadget);
          SetProperty(ref _gadgetSelected, _gadgetSelected && _addedBulb);
          restService = new RestService();
       }
@@ -148,10 +150,16 @@ namespace VoltPlusPlus.ViewModels
              load = 80;
          }
          Global.SubstationLoad = load;
+         Global.IncentivePoint = Global.IncentivePoint + 1.0;
          await Task.FromResult(true);
       }
 
-      public void OnAppearing()
+        private async void OnScheduleGadget(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(SchedulePage));
+        }
+
+        public void OnAppearing()
       {
          IsBusy = true;
          _gadgetSelected = false;

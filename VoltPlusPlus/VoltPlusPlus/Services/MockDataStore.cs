@@ -16,7 +16,7 @@ namespace VoltPlusPlus.Services
             {
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Substation Load", Description="Check the realtime substation load." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "My Gadgets", Description="Access and manage all the electric gadgets." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "User Incentive", Description="Check your incentives received." },
                 //new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
                 //new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
                 //new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }

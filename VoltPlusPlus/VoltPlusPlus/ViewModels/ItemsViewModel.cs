@@ -84,6 +84,10 @@ namespace VoltPlusPlus.ViewModels
          {
             await Shell.Current.GoToAsync($"{nameof(MyGadgetsPage)}");
          }
-      }
+         else if (item.Text.Equals("User Incentive"))
+         {
+                await Shell.Current.GoToAsync($"{nameof(UserIncentivePage)}");
+         }
+        }
    }
 }

@@ -36,8 +36,10 @@
             </TapGestureRecognizer>
          </Grid.GestureRecognizers>
 
-         <Button  Text="Stop" Grid.Row="1" Grid.Column="0" Command="{Binding StopCommand}" IsEnabled="{Binding GadgetSelected}"/>
-         <Button Text="Start" Grid.Row="1" Grid.Column="1" Command="{Binding StartCommand}" IsEnabled="{Binding GadgetSelected}" />
+         
+         <Button Text="Start" Grid.Row="1" Grid.Column="0" Command="{Binding StartCommand}" IsEnabled="{Binding GadgetSelected}" />
+         <Button  Text="Stop" Grid.Row="1" Grid.Column="1" Command="{Binding StopCommand}" IsEnabled="{Binding GadgetSelected}"/>
+         <Button Text="Schedule" Grid.Row="1" Grid.Column="2" Command="{Binding SchedueleCommand}" IsEnabled="{Binding GadgetSelected}" />
 
          <Image Source="AirConditioner.png" Grid.Row="3" Grid.Column="0" BackgroundColor="White"/>
          <Label Text="Master Bedroom AC" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center"/>
@@ -45,14 +47,14 @@
          <Image Source="ElectricCar.png" Grid.Row="3" Grid.Column="1" BackgroundColor="White"/>
          <Label Text="Electri Car" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
 
-         <Image Source="WashingMachine.png" Grid.Row="5" Grid.Column="0" BackgroundColor="White"/>
-         <Label Text="Washing Machine" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center"/>
+         <Image Source="WashingMachine.png" Grid.Row="3" Grid.Column="2" BackgroundColor="White"/>
+         <Label Text="Washing Machine" Grid.Row="4" Grid.Column="2" HorizontalTextAlignment="Center"/>
 
-         <Image Source="Heater.png" Grid.Row="5" Grid.Column="1" BackgroundColor="White"/>
-         <Label Text="Master Bedroom Heater" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+         <Image Source="Heater.png" Grid.Row="5" Grid.Column="0" BackgroundColor="White"/>
+         <Label Text="Master Bedroom Heater" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center"/>
 
-         <Image x:Name="BulbImage" Source="Bulb.png" Grid.Row="7" Grid.Column="0" IsVisible="{Binding AddedBulb}" BackgroundColor="{Binding BulbSelected}"/>
-         <Label x:Name="BulbText" Text="Master Bedroom Light" Grid.Row="8" Grid.Column="0" HorizontalTextAlignment="Center" IsVisible="{Binding AddedBulb}"/>
+         <Image x:Name="BulbImage" Source="Bulb.png" Grid.Row="5" Grid.Column="1" IsVisible="{Binding AddedBulb}" BackgroundColor="{Binding BulbSelected}"/>
+         <Label x:Name="BulbText" Text="Master Bedroom Light" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" IsVisible="{Binding AddedBulb}"/>
       </Grid>
    </ContentPage.Content>
 </ContentPage>
