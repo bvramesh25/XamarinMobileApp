@@ -1429,11 +1429,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
+      "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
       "projectName": "VoltPlusPlus.iOS",
-      "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
+      "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
       "packagesPath": "C:\\Users\\rvbhamid\\.nuget\\packages\\",
-      "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.iOS\\obj\\",
+      "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1457,8 +1457,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
-              "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
+            "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
+              "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
             }
           }
         }

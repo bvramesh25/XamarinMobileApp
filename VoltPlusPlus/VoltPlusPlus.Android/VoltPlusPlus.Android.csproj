@@ -115,5 +115,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Stop.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

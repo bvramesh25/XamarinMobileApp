@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Df9K+s4LbXVcEFph2S5SclAqyLSPfDlcreBJqWT1NsBzGOmkZfUVIZr7orzUFgNfy7mG2Tg5viq4lK5L8+kKQ==",
+  "dgSpecHash": "Zgq1XvAGlHElUvZKw38GU4OySPUOcnhRlM0Et0B7LpyLZpOP8+cuAYU+I9fSJSbk27qLHa9B5RS26Z0H+XQe8w==",
   "success": true,
-  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
+  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rvbhamid\\.nuget\\packages\\inthehand.androidactivity\\1.0.1\\inthehand.androidactivity.1.0.1.nupkg.sha512",
     "C:\\Users\\rvbhamid\\.nuget\\packages\\inthehand.net.bluetooth\\4.0.34.1\\inthehand.net.bluetooth.4.0.34.1.nupkg.sha512",

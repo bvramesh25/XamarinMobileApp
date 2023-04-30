@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1jf3V7Fmvg64IQErtwjBfTLQc6KK+lCiqNwlpJC343/MzzBhze8MKIj8HdEt1EUARhYYOpVp0Lgyrd/GdUMRsQ==",
+  "dgSpecHash": "QZvPcO1EZlkhgDt/kQOOnfg3+7tL1r8HGKUM8gtbm0tRevJfdo+6t9eJNi7i3KNbAqmcaj9/3f6bnt74ffebqQ==",
   "success": true,
-  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
+  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rvbhamid\\.nuget\\packages\\inthehand.net.bluetooth\\4.0.34.1\\inthehand.net.bluetooth.4.0.34.1.nupkg.sha512",
     "C:\\Users\\rvbhamid\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

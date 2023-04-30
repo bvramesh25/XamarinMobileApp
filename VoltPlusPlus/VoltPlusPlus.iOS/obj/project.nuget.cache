@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4B4sGNBXt5lcNdXxLYsPzBAdWYKIc3NFRn7d1xf7HF6dD2CIotpc0BHDGS0b1hPRyQV4wYeNV8FIfb3uDDdOaw==",
+  "dgSpecHash": "UTrvpHHX2dJhHv5xlqR9YTLDj6wgin9IGVREKwUxSDAJl91v3k4LWglqOj/Wgn/YWW9xL529VPjZ0PhfX9QCmQ==",
   "success": true,
-  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
+  "projectFilePath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.iOS\\VoltPlusPlus.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rvbhamid\\.nuget\\packages\\inthehand.net.bluetooth\\4.0.34.1\\inthehand.net.bluetooth.4.0.34.1.nupkg.sha512",
     "C:\\Users\\rvbhamid\\.nuget\\packages\\syncfusion.xamarin.sfchart\\15.4.0.20\\syncfusion.xamarin.sfchart.15.4.0.20.nupkg.sha512",

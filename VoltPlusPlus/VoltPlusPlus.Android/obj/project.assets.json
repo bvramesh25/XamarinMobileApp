@@ -3637,11 +3637,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
+      "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
       "projectName": "VoltPlusPlus.Android",
-      "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
+      "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
       "packagesPath": "C:\\Users\\rvbhamid\\.nuget\\packages\\",
-      "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\obj\\",
+      "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3665,8 +3665,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
-              "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
+            "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
+              "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
             }
           }
         }
@@ -3678,6 +3678,14 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

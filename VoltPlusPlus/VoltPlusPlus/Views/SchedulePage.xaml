@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:VoltPlusPlus.ViewModels" x:DataType="viewmodels:ScheduleViewModel"
+             x:Class="VoltPlusPlus.Views.SchedulePage"
+    Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Schedule Date and Time" FontSize="Medium" HorizontalOptions="Center" />
+            <DatePicker x:Name="DatePicker" MinimumDate="2012/01/01" MaximumDate="2034/01/01"/>
+            <TimePicker x:Name="TimePicker" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Command="{Binding CancelCmd}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCmd}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

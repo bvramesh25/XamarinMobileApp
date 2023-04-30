@@ -16,9 +16,10 @@ namespace VoltPlusPlus.Services
         public async Task<int> GetLoadAsync()
         {
             Uri uri = new Uri("http://in-hgs107245a.ingrnet.com/substation/Substation/GetCurrentLoad");
-            client = new HttpClient();
-
-            HttpResponseMessage response = await client.GetAsync(uri);
+         //HttpClientHandler insecureHandler = GetInsecureHandler();
+         // client = new HttpClient(insecureHandler);
+         client = new HttpClient();
+         HttpResponseMessage response = await client.GetAsync(uri);
             string content = await response.Content.ReadAsStringAsync();
             return Convert.ToInt32(content);
         }
@@ -26,17 +27,20 @@ namespace VoltPlusPlus.Services
         public async Task SetLoadAsync(int newLoad)
         {
             Uri uri = new Uri("http://in-hgs107245a.ingrnet.com/substation/Substation/SetCurrentLoad");
-            client = new HttpClient();
+         //HttpClientHandler insecureHandler = GetInsecureHandler();
+        // client = new HttpClient(insecureHandler);
+         client = new HttpClient();
 
-            StringContent content = new StringContent(newLoad.ToString(), Encoding.UTF8, "application/json");
+         StringContent content = new StringContent(newLoad.ToString(), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync(uri,content);                      
         }
 
         public async Task ToggleBulb(bool isOn)
         {
-            HttpClientHandler insecureHandler = GetInsecureHandler();
-            client = new HttpClient(insecureHandler);
-            Uri uri = new Uri("http://in-hgs107245a.ingrnet.com/substation/Substation/ToggleBulb/" + isOn.ToString().ToLowerInvariant());
+           // HttpClientHandler insecureHandler = GetInsecureHandler();
+            client = new HttpClient();
+         Uri uri = new Uri("http://in-hgs107245a.ingrnet.com/substation/Substation/ToggleBulb/" + isOn.ToString().ToLowerInvariant());
+         //Uri uri = new Uri("https://in-hgs107245a.ingrnet.com/substation/Substation/ToggleBulb/" + isOn.ToString().ToLowerInvariant());
             //HttpResponseMessage response = await client.GetAsync(uri);
             HttpResponseMessage response = await client.GetAsync(uri);
             string content = await response.Content.ReadAsStringAsync();

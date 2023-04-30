@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj": {}
+    "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj": {}
   },
   "projects": {
-    "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj": {
+    "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
+        "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
         "projectName": "VoltPlusPlus.Android",
-        "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
+        "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\VoltPlusPlus.Android.csproj",
         "packagesPath": "C:\\Users\\rvbhamid\\.nuget\\packages\\",
-        "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus.Android\\obj\\",
+        "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -35,8 +35,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
-                "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
+              "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
+                "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj"
               }
             }
           }
@@ -57,14 +57,14 @@
         }
       }
     },
-    "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
+    "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
+        "projectUniqueName": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
         "projectName": "VoltPlusPlus",
-        "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
+        "projectPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\VoltPlusPlus.csproj",
         "packagesPath": "C:\\Users\\rvbhamid\\.nuget\\packages\\",
-        "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\VoltPlusPlus\\VoltPlusPlus\\obj\\",
+        "outputPath": "D:\\Intergraph\\Hackathon 2023\\Samples\\App\\XamarinMobileApp\\VoltPlusPlus\\VoltPlusPlus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
