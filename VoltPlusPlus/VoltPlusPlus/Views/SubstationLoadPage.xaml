@@ -29,9 +29,9 @@
 
         <Label Text="{Binding LoadData}" HorizontalOptions="Center" FontSize="30" />
 
-        <chart:SfChart x:Name="ColumnChart" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300" WidthRequest="300" Margin="0,20,0,0">
+        <chart:SfChart x:Name="ColumnChart" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="250" WidthRequest="300" Margin="0,0,0,0">
             <chart:SfChart.Title >
-                <chart:ChartTitle Text="Predection of load for next 4 hours" Margin="0,100,0,200"/>
+                <chart:ChartTitle Text="Predection of load for next 4 hours" Margin="0,100,0,100"/>
             </chart:SfChart.Title>
 
             <chart:SfChart.PrimaryAxis>
